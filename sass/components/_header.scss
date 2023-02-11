@@ -13,124 +13,124 @@ header {
     height: 80px;
     display: flex;
   }
-}
 
-.nav {
-  display: flex;
-  padding-left: 15px;
+  .nav {
+    display: flex;
+    padding-left: 15px;
 
-  &__link-web {
-    text-decoration: none;
+    &__link-web {
+      text-decoration: none;
+      margin: auto;
+
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.15em;
+      text-align: right;
+      letter-spacing: 0.03em;
+      color: $color-logo;
+    }
+
+    .card__index::after {
+      content: '';
+      position: absolute;
+      width: 54px;
+      height: 4px;
+      top: 48px;
+      left: 38px;
+      border-radius: 2px;
+      background-color: $primary-color;
+    }
+
+    .card__portafolio::after {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 4px;
+      top: 48px;
+      left: 137px;
+      border-radius: 2px;
+      background-color: $primary-color;
+    }
+  }
+
+  .link-nav {
+    display: flex;
+    list-style: none;
     margin: auto;
+    position: relative;
 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.15em;
-    text-align: right;
-    letter-spacing: 0.03em;
-    color: $color-logo;
-  }
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color: $color-title;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.7142em;
+      letter-spacing: 0.02em;
+      margin: auto;
+      margin-right: 50px;
 
-  .card__index::after {
-    content: '';
-    position: absolute;
-    width: 54px;
-    height: 4px;
-    top: 48px;
-    left: 38px;
-    border-radius: 2px;
-    background-color: $primary-color;
-  }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $primary-color;
+      }
+    }
 
-  .card__portafolio::after {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 4px;
-    top: 48px;
-    left: 137px;
-    border-radius: 2px;
-    background-color: $primary-color;
-  }
-}
-
-.link-nav {
-  display: flex;
-  list-style: none;
-  margin: auto;
-  position: relative;
-
-  &__current {
-    color: $primary-color;
-  }
-
-  a {
-    text-decoration: none;
-    font-style: normal;
-    color: $color-title;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.7142em;
-    letter-spacing: 0.02em;
-    margin: auto;
-    margin-right: 50px;
-
-    &:hover,
-    &:focus,
-    &:active {
+    &__current a {
       color: $primary-color;
     }
   }
-}
 
-.contact {
-  display: flex;
-  list-style: none;
-  margin: auto;
-  padding: 0px;
-  padding-left: 273px;
-
-  a.contact__email {
-    color: $primary-color;
-  }
-
-  &__icons-header {
-    margin-right: 10px;
-    padding: 0px;
-  }
-
-  &__icons-header1 {
-    margin-right: 10px;
-    padding: 0px;
-  }
-  &__icons-header2 {
-    margin-right: 10px;
-    padding: 0px;
-  }
-
-  &__icons-header {
-    fill: $primary-color;
-  }
-
-  a {
+  .contact {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.7142em;
-    letter-spacing: 0.02em;
-    color: $color-text;
-    margin-right: 50px;
+    list-style: none;
+    margin: auto;
     padding: 0px;
+    padding-left: 273px;
 
-    &:hover,
-    &:focus {
-      fill: $primary-color;
+    a.contact__email {
       color: $primary-color;
+    }
+
+    &__icons-header {
+      margin-right: 10px;
+      padding: 0px;
+    }
+
+    &__icons-header1 {
+      margin-right: 10px;
+      padding: 0px;
+    }
+    &__icons-header2 {
+      margin-right: 10px;
+      padding: 0px;
+    }
+
+    &__icons-header {
+      fill: $primary-color;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.7142em;
+      letter-spacing: 0.02em;
+      color: $color-text;
+      margin-right: 50px;
+      padding: 0px;
+
+      &:hover,
+      &:focus {
+        fill: $primary-color;
+        color: $primary-color;
+      }
     }
   }
 }

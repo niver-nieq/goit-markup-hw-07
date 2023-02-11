@@ -60,22 +60,22 @@
 
     <main>
         <!-- Contenedor del titulo Principal -->
-        <section class="conten-prin">
-            <h1 class="title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-            <button class="boton" type="button" data-modal-open>Solucite nuestro servicio</button>
+        <section class="main-container">
+            <h1 class="main-container__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+            <button class="main-container__boton" type="button" data-modal-open>Solucite nuestro servicio</button>
         </section>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="button-modal-close" type="button" data-modal-close>
+                <button class="modal__button-close" type="button" data-modal-close>
                     <svg class="icons-close" width="11" height="11">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <h3 class="title-modal">Deje sus datos, nos contactaremos con usted</h3>
-                <form class="formu" name="Conocer al cliente" autocomplete="off" novalidate>
+                <h3 class="modal__title">Deje sus datos, nos contactaremos con usted</h3>
+                <form class="form" name="Conocer al cliente" autocomplete="off" novalidate>
                     <div class="form-modal">
-                        <label class="tex-modal" for="nombre">Nombre</label>
-                        <input class="modal-datos" type="text" name="nombre" id="nombre">
+                        <label class="form-modal__text" for="nombre">Nombre</label>
+                        <input class="form-modal__datos" type="text" name="nombre" id="nombre">
                         <div class="form-icons">
                             <svg class="icons-form" width="12" height="12">
                                 <use href="./images/icons.svg#icon-contacto"></use>
@@ -83,8 +83,8 @@
                         </div>
                     </div>
                     <div class="form-modal">
-                        <label class="tex-modal" for="numero">Teléfono</label>
-                        <input class="modal-datos" type="tel" name="numero" id="numero">
+                        <label class="form-modal__text" for="numero">Teléfono</label>
+                        <input class="form-modal__datos" type="tel" name="numero" id="numero">
                         <div class="form-icons">
                             <svg class="icons-form" width="13" height="13">
                                 <use href="./images/icons.svg#icon-telefono"></use>
@@ -92,23 +92,24 @@
                         </div>
                     </div>
                     <div class="form-modal">
-                        <label class="tex-modal" for="correo">E-mail</label>
-                        <input class="modal-datos" type="text" name="correo" id="correo">
+                        <label class="form-modal__text" for="correo">E-mail</label>
+                        <input class="form-modal__datos" type="text" name="correo" id="correo">
                         <div class="form-icons">
                             <svg class="icons-form" width="15" height="12">
                                 <use href="./images/icons.svg#icon-correo"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="form-modal-comen">
-                        <label class="tex-modal" for="ideas">Comentarios</label>
-                        <textarea class="modal-coment" type="text" name="ideas" id="ideas"
+                    <div class="modal-comment">
+                        <label class="form-modal__text" for="ideas">Comentarios</label>
+                        <textarea class="modal-comment__comment" type="text" name="ideas" id="ideas"
                             placeholder="Introduzca el texto"></textarea>
                     </div>
-                    <div class="form-modal-check">
-                        <label class="descrip" for="verificar">
-                            <input class="checkbox" type="checkbox">
-                            <p class="descrip">Estoy de acuerdo con el boletín informativo y acepto los Términos y
+                    <div class="modal-check">
+                        <label class="modal-check__description" for="verificar">
+                            <input class="modal-check__checkbox" type="checkbox">
+                            <p class="modal-check__description">Estoy de acuerdo con el boletín informativo y acepto los
+                                Términos y
                                 Condiciones</p>
                         </label>
                     </div>
@@ -354,39 +355,39 @@
     <footer>
         <div class="container container-footer">
             <section class="cont-footer">
-                <a class="link-web-footer" href="https://taupe-melba-f719b1.netlify.app/" target="_blank"
+                <a class="cont-footer__logo-footer" href="https://taupe-melba-f719b1.netlify.app/" target="_blank"
                     title="Ir a pagina">Web<samp class="studiouno">Studio</samp></a>
                 <address>
                     <ul class="link-footer">
-                        <li><a class="link-map" href="https://goo.gl/maps/KDuvCetYGWwRNp6s5" target="_blank"
+                        <li><a class="link-footer__map" href="https://goo.gl/maps/KDuvCetYGWwRNp6s5" target="_blank"
                                 title="Ir a mapa">Calz.
                                 Ticomán 500, Ciudad de México, CDMX, México</a></li>
-                        <li><a class="link-con" href="mailto:info@example.com"
+                        <li><a class="link-footer__contact" href="mailto:info@example.com"
                                 title="Enviar Correo">info@example.com</a>
                         </li>
-                        <li><a class="link-con" href="tel:+525555296000">+52 55 5529 6000</a></li>
+                        <li><a class="link-footer__contact" href="tel:+525555296000">+52 55 5529 6000</a></li>
                     </ul>
                 </address>
             </section>
-            <div class="cont-footer-redes">
-                <h3 class="title-footer">ENCUENTRENOS EN</h3>
-                <div class="container-redes-footer">
-                    <a class="icons-redes-footer" href="">
-                        <svg class="redes" widht="20" heigh="20">
+            <div class="footer-redes">
+                <h3 class="footer-redes__title">ENCUENTRENOS EN</h3>
+                <div class="redes-footer">
+                    <a class="redes-footer__icons" href="">
+                        <svg class="redes" widht="20" height="20">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                     </a>
-                    <a class="icons-redes-footer1" href="">
+                    <a class="redes-footer__icons1" href="">
                         <svg class="redes" widht="20" height="20">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
-                    <a class="icons-redes-footer" href="">
+                    <a class="redes-footer__icons" href="">
                         <svg class="redes" widht="20" height="20">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
-                    <a class="icons-redes-footer" href="">
+                    <a class="redes-footer__icons" href="">
                         <svg class="redes" widht="20" height="20">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
@@ -394,13 +395,13 @@
                 </div>
             </div>
             <form class="form-footer" name="suscripcion" autocomplete="off" novalidate>
-                <div class="form-sucrib">
-                    <label class="tex-for" for="correo"> SUSCRÍBASE AL BOLETÍN INFORMATIVO</label>
-                    <input class="input-footer" type="correo" name="correo" id="correo"
+                <div class="form-subscribe">
+                    <label class="form-subscribe__text" for="correo"> SUSCRÍBASE AL BOLETÍN INFORMATIVO</label>
+                    <input class="form-subscribe__input" type="correo" name="correo" id="correo"
                         placeholder="Correo Electrónico">
                 </div>
                 <button class="for-button" type="submit">Suscríbase
-                    <svg class="icon-enviar" widht="24" height="24">
+                    <svg class="for-button__enviar" widht="24" height="24">
                         <use href="./images/icons.svg#icon-enviar-cono"></use>
                     </svg>
                 </button>

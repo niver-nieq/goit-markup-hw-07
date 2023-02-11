@@ -27,16 +27,6 @@
   margin-top: 16px;
 }
 
-.container-redes-footer {
-  display: flex;
-  justify-content: center;
-  height: 44px;
-  margin-top: 16px;
-  padding: 0px;
-  margin: 0 auto;
-  margin-top: 16px;
-}
-
 .icons-redes {
   border-radius: 50%;
   height: 44px;
@@ -46,31 +36,9 @@
   margin-bottom: 0px;
 }
 
-.icons-redes-footer {
-  border-radius: 50%;
-  height: 44px;
-  margin-right: 10px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  fill: #afb1b8;
-  margin-bottom: 0px;
-}
-
-.icons-redes-footer1 {
-  border-radius: 50%;
-  height: 44px;
-  margin-right: 10px;
-  padding: 12px;
-  background: #2196f3;
-  fill: #f5f4fa;
-  margin-bottom: 0px;
-}
-
 .icons-redes:hover,
-.icons-redes-footer:hover,
 .icons-redes-footer1:hover,
 .icons-redes:focus,
-.icons-redes-footer:focus,
 .icons-redes-footer1:focus {
   background: #2196f3;
   fill: #f5f4fa;
