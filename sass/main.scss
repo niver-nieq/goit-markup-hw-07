@@ -1,6 +1,6 @@
 @import 'utils/variables';
 @import 'components/container-section';
-@import 'components/icons.scss';
+@import 'components/main-client';
 @import 'components/header';
 @import 'components/container-footer';
 @import 'components/form-footer';
@@ -22,57 +22,9 @@
 /* ************************************** */
 /* En esta posición trabajamos en el main */
 /* ************************************** */
-
-.principal-title-equipo {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.428em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--var-color-title);
-}
-
-.image-prin-equipo:hover {
-  border: 2px solid var(--var-color-fondo-hover-focus);
-  border-radius: 2px;
-}
-
 /* Aplicamos hover para los titulos */
-.title-pg-principal:hover,
-.principal-title-equipo:hover,
-.principal-text-equipo:hover,
-.portfolio-title:hover,
-.portfolio-text:hover,
-.images-detalle p:hover,
-.images-detalle1 p:hover {
-  text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
-}
-
-.principal-text-equipo {
-  margin: auto;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.71em;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: var(--var-color-text);
-}
 
 /* Centramos las imagenes en la pagina principal */
-
-.title-pg-principal {
-  margin: auto;
-  padding-bottom: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--var-color-title);
-}
 
 /* Trabajo en la section de nuestro equipo */
 
@@ -140,7 +92,10 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+.portfolio-title:hover,
+.portfolio-text:hover {
+  text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
+}
 .cont-portafolio-img {
   margin: 0 auto;
   padding: 0px;
