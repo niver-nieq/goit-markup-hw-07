@@ -33,16 +33,15 @@
     font-size: 12px;
     line-height: 1.166em;
     letter-spacing: 0.01em;
-    /* color: rgba(117, 117, 117, 0.5); */
-    color: rgba(33, 33, 33, 1);
+    color: $color-input-window;
 
     &:hover + .form-icons,
     &:focus + .form-icons {
-      fill: #2196f3;
+      fill: $primary-color;
     }
 
     &:hover {
-      border-color: #2196f3;
+      border-color: $primary-color;
     }
   }
 
@@ -76,10 +75,10 @@
     font-size: 12px;
     line-height: 1.166em;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: $color-text-window;
 
     &:hover {
-      border-color: #2196f3;
+      border-color: $primary-color;
     }
   }
   textarea {
@@ -103,7 +102,7 @@
     line-height: 1.714em;
     /* identical to box height, or 171% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $color-text;
   }
   &__checkbox {
     width: 16px;
@@ -114,7 +113,7 @@
 }
 
 .submit {
-  background-color: #2196f3;
+  background-color: $background-button;
   display: block;
   margin: auto;
   cursor: pointer;
@@ -132,8 +131,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-
+  color: $text-button;
   &:hover {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -8,7 +8,9 @@
 @import 'components/main-container';
 @import 'components/main-window';
 @import 'components/main-window-form';
-
+@import 'components/main-details';
+@import 'components/main-image-container';
+@import 'components/main-equipment';
 :root {
   --var-color-text: #757575;
   --var-color-fondo-hover-focus: #2196f3;
@@ -16,56 +18,10 @@
   --var-color-fondo1: #f5f4fa;
 }
 
-/* En esta posición trabajamos en el header */
-
-/* Estilos de svg */
-
-/* En esta posición trabajo en la lista de navegación */
-
-/* En esta ósición trabajo de la lista de contacto */
-
 /* Ya esta listo el header */
 /* ************************************** */
 /* En esta posición trabajamos en el main */
 /* ************************************** */
-
-.principal-detalles {
-  padding: 0px;
-  margin: 0 auto;
-}
-
-.principal-detalles ul {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0px;
-}
-
-.lis-detalle {
-  margin-right: 30px;
-}
-
-.principal-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.428em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin: 0 auto;
-  color: var(--var-color-title);
-}
-
-.principal-text {
-  width: 270px;
-  margin: auto;
-  font-size: 14px;
-  text-align: justify;
-  line-height: 1.71em;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: var(--var-color-text);
-}
 
 .principal-title-equipo {
   font-style: normal;
@@ -78,12 +34,12 @@
   color: var(--var-color-title);
 }
 
+.image-prin-equipo:hover {
+  border: 2px solid var(--var-color-fondo-hover-focus);
+  border-radius: 2px;
+}
+
 /* Aplicamos hover para los titulos */
-.title:hover,
-.principal-title:hover,
-.principal-title:hover,
-.principal-text:hover,
-.principal-text:active,
 .title-pg-principal:hover,
 .principal-title-equipo:hover,
 .principal-text-equipo:hover,
@@ -105,16 +61,7 @@
 }
 
 /* Centramos las imagenes en la pagina principal */
-.cont-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-/* Trabajamos en los titulos del cuerpo h2 */
 .title-pg-principal {
   margin: auto;
   padding-bottom: 50px;
@@ -127,131 +74,7 @@
   color: var(--var-color-title);
 }
 
-.list-img {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-}
-
-.images-detalle1 {
-  width: 373.16px;
-  height: 323.7px;
-  margin-left: 30.26px;
-  margin-right: 23.42px;
-
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.images-detalle {
-  width: 373.16px;
-  height: 323.7px;
-
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.images-detalle p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7142em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  position: absolute;
-  top: 0%;
-  width: 373.16px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background: rgba(47, 48, 58, 0.8);
-  margin: auto;
-  margin-top: 66%;
-}
-
-.images-detalle1 p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7142em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  position: absolute;
-  top: 0%;
-  width: 373.16px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background: rgba(47, 48, 58, 0.8);
-  margin: auto;
-  margin-top: 66%;
-}
-
-.images-detalle p:hover,
-.images-detalle1 p:hover {
-  border: 2px solid var(--var-color-fondo-hover-focus);
-  border-radius: 2px;
-}
-
-.image-prin-detalle {
-  width: 373.16px;
-  height: 323.7px;
-}
-
-.image-prin-detalle:hover,
-.image-prin-equipo:hover {
-  border: 2px solid var(--var-color-fondo-hover-focus);
-  border-radius: 2px;
-}
-
 /* Trabajo en la section de nuestro equipo */
-.color-equipo {
-  background: var(--var-color-fondo1);
-}
-
-.con-equipo {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.lis-equipo {
-  display: flex;
-  margin: auto;
-  padding: 0px;
-}
-
-.conten-img-equipo {
-  background: #ffffff;
-  margin-right: 30px;
-  padding-bottom: 30px;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.conten-img-equipo1 {
-  background: #ffffff;
-  margin: 0 auto;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.image-prin-equipo {
-  width: 270px;
-  height: 260px;
-}
 
 /* Trabajamos en el portafolio */
 .cuepo-portafolio {

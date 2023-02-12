@@ -1,5 +1,5 @@
 main {
-  background: var(--var-colo-text-hover-focus);
+  background: $background-main;
 }
 
 main li {
@@ -32,8 +32,13 @@ main li {
     justify-content: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $color-main-title;
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
   }
+
   &__boton {
     display: flex;
     margin: 0 auto;

@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $backdrop-color;
   opacity: 1;
   opacity: 1;
   visibility: visible;
@@ -45,7 +45,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: $background-window;
     cursor: pointer;
-    color: #000000;
+    color: $fill-button-window;
     opacity: 1;
     opacity: 1;
     visibility: visible;
@@ -70,6 +70,6 @@
     line-height: 1.15em;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $color-title-window;
   }
 }

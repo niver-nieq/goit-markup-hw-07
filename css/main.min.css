@@ -18,25 +18,6 @@ body {
   padding-top: 94px;
 }
 
-.images-vect {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
-}
-
-.images-vect:hover {
-  border: 2px solid var(--var-color-fondo-hover-focus);
-  border-radius: 2px;
-}
-
-.images-vect:hover {
-  fill: #2196f3;
-}
-
 .container-redes-socia {
   display: flex;
   justify-content: center;
@@ -400,8 +381,8 @@ footer .cont-footer .link-footer a:hover, footer .cont-footer .link-footer a:foc
   margin: 0 auto;
 }
 .footer-redes__title:hover {
-  -webkit-text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
-          text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
+  -webkit-text-decoration: underline #2196f3 1px;
+          text-decoration: underline #2196f3 1px;
 }
 
 .redes-footer {
@@ -437,7 +418,7 @@ footer .cont-footer .link-footer a:hover, footer .cont-footer .link-footer a:foc
 }
 
 main {
-  background: var(--var-colo-text-hover-focus);
+  background: #ffffff;
 }
 
 main li {
@@ -467,6 +448,10 @@ main li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+.main-container__title:hover {
+  -webkit-text-decoration: underline #2196f3 1px;
+          text-decoration: underline #2196f3 1px;
 }
 .main-container__boton {
   display: flex;
@@ -593,7 +578,6 @@ main li {
   font-size: 12px;
   line-height: 1.166em;
   letter-spacing: 0.01em;
-  /* color: rgba(117, 117, 117, 0.5); */
   color: rgb(33, 33, 33);
 }
 .form-modal__datos:hover + .form-icons, .form-modal__datos:focus + .form-icons {
@@ -688,38 +672,30 @@ main li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-:root {
-  --var-color-text: #757575;
-  --var-color-fondo-hover-focus: #2196f3;
-  --var-colo-text-hover-focus: #ffffff;
-  --var-color-fondo1: #f5f4fa;
-}
-
-/* En esta posición trabajamos en el header */
-/* Estilos de svg */
-/* En esta posición trabajo en la lista de navegación */
-/* En esta ósición trabajo de la lista de contacto */
-/* Ya esta listo el header */
-/* ************************************** */
-/* En esta posición trabajamos en el main */
-/* ************************************** */
-.principal-detalles {
-  padding: 0px;
-  margin: 0 auto;
-}
-
-.principal-detalles ul {
+.main-details {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
   padding: 0px;
+  margin: 0 auto;
 }
-
-.lis-detalle {
+.main-details__details {
   margin-right: 30px;
 }
-
-.principal-title {
+.main-details__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+.main-details__images:hover {
+  border: 1px solid #2196f3;
+  border-radius: 2px;
+  fill: #2196f3;
+}
+.main-details__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -727,10 +703,14 @@ main li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0 auto;
-  color: var(--var-color-title);
+  margin-bottom: 10px;
+  color: #212121;
 }
-
-.principal-text {
+.main-details__title:hover {
+  -webkit-text-decoration: underline #2196f3 1px;
+          text-decoration: underline #2196f3 1px;
+}
+.main-details__text {
   width: 270px;
   margin: auto;
   font-size: 14px;
@@ -738,49 +718,14 @@ main li {
   line-height: 1.71em;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: var(--var-color-text);
+  color: #757575;
+}
+.main-details__text:hover {
+  -webkit-text-decoration: underline #2196f3 1px;
+          text-decoration: underline #2196f3 1px;
 }
 
-.principal-title-equipo {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.428em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--var-color-title);
-}
-
-/* Aplicamos hover para los titulos */
-.title:hover,
-.principal-title:hover,
-.principal-title:hover,
-.principal-text:hover,
-.principal-text:active,
-.title-pg-principal:hover,
-.principal-title-equipo:hover,
-.principal-text-equipo:hover,
-.portfolio-title:hover,
-.portfolio-text:hover,
-.images-detalle p:hover,
-.images-detalle1 p:hover {
-  -webkit-text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
-          text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
-}
-
-.principal-text-equipo {
-  margin: auto;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.71em;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: var(--var-color-text);
-}
-
-/* Centramos las imagenes en la pagina principal */
-.cont-img {
+.image-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -788,9 +733,7 @@ main li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-/* Trabajamos en los titulos del cuerpo h2 */
-.title-pg-principal {
+.image-container__title {
   margin: auto;
   padding-bottom: 50px;
   font-style: normal;
@@ -801,14 +744,47 @@ main li {
   letter-spacing: 0.03em;
   color: var(--var-color-title);
 }
+.image-container__title:hover {
+  -webkit-text-decoration: underline #2196f3 1px;
+          text-decoration: underline #2196f3 1px;
+}
 
-.list-img {
+.image-list {
   display: flex;
   margin: 0px;
   padding: 0px;
 }
-
-.images-detalle1 {
+.image-list__details {
+  width: 373.16px;
+  height: 323.7px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.image-list__details p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 0%;
+  width: 373.16px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+  margin: auto;
+  margin-top: 66%;
+}
+.image-list__details p:hover {
+  border: 2px solid #2196f3;
+  border-radius: 4px;
+}
+.image-list__details1 {
   width: 373.16px;
   height: 323.7px;
   margin-left: 30.26px;
@@ -818,17 +794,7 @@ main li {
   display: flex;
   justify-content: center;
 }
-
-.images-detalle {
-  width: 373.16px;
-  height: 323.7px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.images-detalle p {
+.image-list__details1 p {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -846,56 +812,31 @@ main li {
   margin: auto;
   margin-top: 66%;
 }
-
-.images-detalle1 p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7142em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  position: absolute;
-  top: 0%;
-  width: 373.16px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background: rgba(47, 48, 58, 0.8);
-  margin: auto;
-  margin-top: 66%;
+.image-list__details1 p:hover {
+  border: 2px solid #2196f3;
+  border-radius: 4px;
 }
-
-.images-detalle p:hover,
-.images-detalle1 p:hover {
-  border: 2px solid var(--var-color-fondo-hover-focus);
-  border-radius: 2px;
-}
-
-.image-prin-detalle {
+.image-list__image {
   width: 373.16px;
   height: 323.7px;
 }
-
-.image-prin-detalle:hover,
-.image-prin-equipo:hover {
+.image-list__image:hover {
   border: 2px solid var(--var-color-fondo-hover-focus);
   border-radius: 2px;
 }
 
-/* Trabajo en la section de nuestro equipo */
 .color-equipo {
-  background: var(--var-color-fondo1);
+  background: #f5f4fa;
 }
 
-.con-equipo {
+.equipment-container {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.lis-equipo {
+.team-list {
   display: flex;
   margin: auto;
   padding: 0px;
@@ -921,6 +862,69 @@ main li {
   height: 260px;
 }
 
+:root {
+  --var-color-text: #757575;
+  --var-color-fondo-hover-focus: #2196f3;
+  --var-colo-text-hover-focus: #ffffff;
+  --var-color-fondo1: #f5f4fa;
+}
+
+/* Ya esta listo el header */
+/* ************************************** */
+/* En esta posición trabajamos en el main */
+/* ************************************** */
+.principal-title-equipo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.428em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--var-color-title);
+}
+
+.image-prin-equipo:hover {
+  border: 2px solid var(--var-color-fondo-hover-focus);
+  border-radius: 2px;
+}
+
+/* Aplicamos hover para los titulos */
+.title-pg-principal:hover,
+.principal-title-equipo:hover,
+.principal-text-equipo:hover,
+.portfolio-title:hover,
+.portfolio-text:hover,
+.images-detalle p:hover,
+.images-detalle1 p:hover {
+  -webkit-text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
+          text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
+}
+
+.principal-text-equipo {
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.71em;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--var-color-text);
+}
+
+/* Centramos las imagenes en la pagina principal */
+.title-pg-principal {
+  margin: auto;
+  padding-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--var-color-title);
+}
+
+/* Trabajo en la section de nuestro equipo */
 /* Trabajamos en el portafolio */
 .cuepo-portafolio {
   margin: 0 auto;

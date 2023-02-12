@@ -19,7 +19,7 @@
     margin: 0 auto;
 
     &:hover {
-      text-decoration: underline var(--var-color-fondo-hover-focus) 1px;
+      text-decoration: underline $primary-color 1px;
     }
   }
 }
